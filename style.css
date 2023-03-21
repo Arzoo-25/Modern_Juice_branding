@@ -1,0 +1,172 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #F6AD8B;
+}
+#video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: 60%;
+}
+video{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+}
+h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 10vw;
+    font-weight: 600;
+}
+#nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 40px;
+}
+#nav h4{
+    color: #fff;
+    font-weight: 400;
+}
+.icons{
+    position: absolute;
+    right: 8%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 7%;
+    padding: 10px;
+    color: #fff;
+}
+.icons:hover{
+    cursor: pointer;
+}
+button{
+    padding: 10px 22px;
+    background-color: #d88f6e;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #c18265;
+    padding: 10px 26px;
+}
+#wtsap{
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    padding: 10px 22px;
+    background-color: #d88f6e;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+#warn{
+    position: absolute;
+    background-color: #c18265;
+    width: 200px;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 200;
+}
+#slidedown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%,0);
+    
+}
+#slidedown h5{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+#slidedown i{
+    color: #fff;
+    animation: anim 1s ease-in-out  infinite  both;
+}
+#slidedown i:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 500px){
+    #nav{
+        padding: 0 20px;
+        height: 100px;
+        align-items: center;
+    }
+    #nav button{
+        font-size: 10px;
+        padding: 7px 12px;
+    }
+    #main h1{
+        font-size: 15vw;
+    }
+    .icons{
+        right: 18%;
+        width: 18%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+
+    }
+    #video{
+        width: 80%;
+        height: 40%;
+    }
+    #warn{
+        bottom: 10%;
+        width: 150px;
+    }
+    #slidedown{
+        width: 100%;
+    }
+}
+
+@keyframes anim{
+    0%{
+        margin-bottom: 10px;
+    }
+    50%{
+        margin-bottom: 0px;
+    }
+    100%{
+        margin-bottom: 10px;
+    }
+}
